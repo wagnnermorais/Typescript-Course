@@ -21,3 +21,25 @@
 - Para instalar o ts, é utilizado o npm, o nome do pacote é typescript e é adicionado de forma global com a <strong>flag -g</strong>.
 
 - A partir da instalação, é possível executar/compilar Typescript em qualquer local da nossa máquina, com o comando tsc.
+
+# Fundamentos do Typescript
+
+## O que são tipos?
+
+- Em typescript, a principal função é determinar tipos para os dados, garantindo a qualidade do código, além de fazer o próprio typescript nos ajudar na hora do desenvolvimento.
+
+- Ou seja, precisamos definir corretamente o tipo das variáveis, dos retornos, das funções e das manipulações de dados. Consequentemente teremos um software melhor programado e é este o principal intuito do ts.
+
+### Tipos primitivos
+
+- Há diversos tipos em typescript, entre eles, os <strong>primitivos</strong>, que são: number, string e boolean.
+
+#### Number
+
+- O tipo number garante que o dado seja um número, logo, pode ser inserido apenas números na variável e, também, mudar o valor para outro número.
+
+- O typescript possibilita também a inserção de métodos númericos apenas.
+
+#### String
+
+- O tipo string garante que o dado seja um texto, logo, pode ser inserido apenas texto na variável, permitindo, inserção de métodos de texto apenas.
