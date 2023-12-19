@@ -43,3 +43,25 @@
 #### String
 
 - O tipo string garante que o dado seja um texto, logo, pode ser inserido apenas texto na variável, permitindo, inserção de métodos de texto apenas.
+
+#### Type Annotation & Type Interference
+
+- Estes dois conceitos irão acompanhar em todo o processo de desenvolvimento de aplicações.
+
+- Annotation é quando definimos o tipo de um dado manualmente.
+
+- Interference é quando o TS identifica e define o tipo de dado para nós.
+
+## Gerando arquivo de configuração
+
+- O typescript pode ser configurado de muitas maneiras, mas, para isso, é necessário do arquivo de configuração.
+
+- Para criar ele, é utilizado: <strong>tsc --init</strong>.
+
+- Agora, é possível mudar várias opções em relação ao que o typescript executa e também é feito o compile.
+
+### Configuração para compilar automaticamente
+
+- Para gerar a compilação automática, é utilizado o comando: <strong>tsc -w</strong>.
+
+- O output será gerado automaticamente sempre que o projeto for salvo.
