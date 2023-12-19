@@ -65,3 +65,27 @@
 - Para gerar a compilação automática, é utilizado o comando: <strong>tsc -w</strong>.
 
 - O output será gerado automaticamente sempre que o projeto for salvo.
+
+## Avançando em Tipos
+
+### Arrays
+
+- Pode-se especificar um array como tipo também.
+
+- Se há um array de números: number[].
+
+- Se há um array de string: string[].
+
+- Isso acontece pois geralmente os arrays possuem apenas um único tipo de dado entre seus itens.
+
+#### Outra sintaxe de Array
+
+- Os tipos de array possuem duas sintaxes, a sintaxe vista previamente: number[], string[]. Ou também pode ser criado um array desta maneira: Array<number>
+
+### Tipo Any
+
+- O <em>any</em> transmite ao TS que qualquer tipo satisfaz a variável.
+
+- É uma boa prática evitar ao máximo usar este tipo, pois vai contra os princípios do typescript.
+
+- Dois casos de uso: O tipo do dado realmente não importa e arrays de dados de múltiplos tipos.
