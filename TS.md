@@ -66,9 +66,9 @@
 
 - O output será gerado automaticamente sempre que o projeto for salvo.
 
-## Avançando em Tipos
+# Avançando em Tipos
 
-### Arrays
+## Arrays
 
 - Pode-se especificar um array como tipo também.
 
@@ -78,14 +78,34 @@
 
 - Isso acontece pois geralmente os arrays possuem apenas um único tipo de dado entre seus itens.
 
-#### Outra sintaxe de Array
+### Outra sintaxe de Array
 
 - Os tipos de array possuem duas sintaxes, a sintaxe vista previamente: number[], string[]. Ou também pode ser criado um array desta maneira: Array<number>
 
-### Tipo Any
+## Tipo Any
 
 - O <em>any</em> transmite ao TS que qualquer tipo satisfaz a variável.
 
 - É uma boa prática evitar ao máximo usar este tipo, pois vai contra os princípios do typescript.
 
 - Dois casos de uso: O tipo do dado realmente não importa e arrays de dados de múltiplos tipos.
+
+## Parâmetro de funções
+
+- Pode ser definido o tipo de cada parâmetro de uma função, assim condiciona-se o seu uso correto. A sintaxe é: function example(name: string) {}
+
+- Agora, o parâmetro name deverá ser passado sempre como uma string.
+
+## Retorno das funções
+
+- Os tipos dos retornos também podem ser definidos, para isso, é utilizado a sintaxe: function example():number {}
+
+- O retorno será somente do tipo number.
+
+## Funções anônimas
+
+- O typescript consegue ajudar também em funções anônimas, fazendo uma validação do código digitado, fornecendo dicas de possíveis problemas, como por exemplo, métodos não existentes.
+
+## Tipos em Objetos
+
+- Pode ser determinado tipos para objetos também, tendo a seguinte sintaxe: {value: type}.
