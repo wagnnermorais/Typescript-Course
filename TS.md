@@ -109,3 +109,69 @@
 ## Tipos em Objetos
 
 - Pode ser determinado tipos para objetos também, tendo a seguinte sintaxe: {value: type}.
+
+## Propriedades opcionais
+
+- Nem sempre os objetos possuem todas as propriedades que poderiam possuir, por isso, temos as propriedades opcionais.
+
+- Para ter esse resultado, deve-se colocar uma interrogação no valor: nome?: string
+
+## Validação de props opcionais
+
+- Quando a propriedade é opcional, precisa-se criar uma validação, isso acontece porque o typescript não ajuda mais, já que ele deixa de controlar o valor que recebemos.
+
+- Para isto, é utilizado uma condicional para conseguir resolver a situação.
+
+## Union Types
+
+- O union type é uma alternativa melhor do que o any, onde podemos determinar dois tipos para um dado.
+
+- A sintaxe é: type | type.
+
+## Avançando no Union Types
+
+- Pode-se utilizar condicionais para validação do tipo de union types, com isso, é possível trilhar rumos diferentes, baseado no tipo de dado.
+
+- Para checar o tipo, utiliza-se <em>typeof</em>
+
+## Type alias
+
+- <strong>Type alias</strong> é um recurso que permite criar um tipo e determinar o que ele verifica, desta maneira, temos uma forma mais fácil de chamá-lo em vez de criar expressões complexas com Union Types, por exemplo.
+
+## Introdução às interfaces
+
+- Uma outra maneira de noemar um tipo de objeto é às interfaces, podemos determinar um nome para o tipo e, também, escolher quais as propriedades e seus tipos.
+
+## Diferença entre type alias e interfaces
+
+- Na maioria das vezes, podemos optar entre qualquer um dos recursos sem problemas, a única diferença é que a Interface pode ser alterada ao longo do código, já o Alias não.
+
+- Ou seja, se pretendemos mudar como o tipo se conforma, devemos escolher a Interface.
+
+## Literal Types
+
+- <strong>Literal</strong> types é um recurso que permite colocar valores como tipos, isso restringe o uso a não só tipos, como também os próprios valores.
+
+- Este recurso é muito utilizado com Union Types.
+
+## Non-null Assertion Operator
+
+- Às vezes o typescript pode evidenciar um erro, baseado em um valor que no momento do código, ainda não está disponível.
+
+- Porém, se sabemos que este valor será preenchido, é possível evitar o erro utilizando o caractere "!".
+
+## Bigint
+
+- Com o tipo bigint, pode-se declarar números com valores MUITO altos.
+
+- Podemos utilizar a notação literal, exemplo: 100n.
+
+- Para este recurso, é preciso mudar a configuração do typescript, para a versão mínima de ES2020.
+
+## Symbol
+
+- De forma resumida, o Symbol cria uma referência única para um valor.
+
+- Ou seja, mesmo que ele possua o mesmo valor de outra variável, terá valores sendo considerados diferentes.
+
+- Para este recurso, é preciso mudar a configuração do typescript, para a versão mínima de ES2020.
