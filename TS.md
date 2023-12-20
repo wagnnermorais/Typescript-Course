@@ -175,3 +175,35 @@
 - Ou seja, mesmo que ele possua o mesmo valor de outra variável, terá valores sendo considerados diferentes.
 
 - Para este recurso, é preciso mudar a configuração do typescript, para a versão mínima de ES2020.
+
+# Narrowing (Verificação de tipos e dados)
+
+- Narrowing é um recurso de typescript para identificar tipos de dados, dando assim uma direção diferente a execução do programa, baseada no tipo que foi identificado.
+
+- Há situações em que os tipos podem ser imprevisíveis, e queremos executar algo para cada uma das possibilidades.
+
+- Isso é fundamental para evitar erros de compilador, identificando e resolvendo os possíveis erros na hora de desenvolvimento.
+
+## Typeof Type Guard
+
+- O type guard é basicamente uma validação do tipo utilizando o typeof.
+
+- Desta maneira, é possível comparar o retorno do operador com um possível tipo.
+
+- Todos os dados vem como string, exemplo: "string", "number", "boolean". E a partir disso, são realizadas bifurcações.
+
+## Checando se valor existe
+
+- Podemos oclocar uma variável em um if, e, se houver valor, recebemos um true, caso não, um false.
+
+- Desta maneira, é possível realizar o narrowing também.
+
+## Instanceof
+
+- Para além dos tipos primitivos, podemos trabalhar com o instanceof, checando se um dado pertence a uma determinada classe.
+
+- E ele vai servir até para próprias classes criadas.
+
+## Operador in
+
+- O operador <strong>in</strong> é utilizado para checar se existe uma propriedade no objeto, uma vez que as propriedades podem ser opcionais.
