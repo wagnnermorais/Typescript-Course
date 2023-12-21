@@ -207,3 +207,19 @@
 ## Operador in
 
 - O operador <strong>in</strong> é utilizado para checar se existe uma propriedade no objeto, uma vez que as propriedades podem ser opcionais.
+
+# Funções em Typescript
+
+## Funções sem retorno
+
+- É possível criar funções que não retornam valores, elas recebem o tipo void, ele vai fazer com que o typescript entenda que não há um valor de retorno.
+
+## Callback como argumento
+
+- Podemos inserir uma função de callback como argumento de função, nela, é possível definir o tipo de argumento aceito pelo callback e, também, o tipo de retorno da mesma.
+
+## Generic functions
+
+- É uma estratégia para quando o tipo de retorno é relacionado ao tipo do argumento, por exemplo: Um item de um array, pode ser string, boolean ou number.
+
+- Normalmente, são utilizadas letras como T ou U para definir os generics, é uma convenção.
