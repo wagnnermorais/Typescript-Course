@@ -223,3 +223,7 @@
 - É uma estratégia para quando o tipo de retorno é relacionado ao tipo do argumento, por exemplo: Um item de um array, pode ser string, boolean ou number.
 
 - Normalmente, são utilizadas letras como T ou U para definir os generics, é uma convenção.
+
+## Constraints nas Generics Functions
+
+- As generic functions podem ter seu escopo reduzido por constraints, basicamente, limitando os tipos que podem ser utilizados no Generic, fazendo com que o escopo seja menos abrangente,
