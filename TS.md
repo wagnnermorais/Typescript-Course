@@ -227,3 +227,31 @@
 ## Constraints nas Generics Functions
 
 - As generic functions podem ter seu escopo reduzido por constraints, basicamente, limitando os tipos que podem ser utilizados no Generic, fazendo com que o escopo seja menos abrangente,
+
+## Definindo tipo de parâmetros
+
+- Em Generic Functions, temos que utilizar parâmetros de tipos semelhantes para evitar erros, porém, há a possíbilidade de determinar o tipo também dos parâmetros aceitos, com uma sintaxe especial.
+
+- Isso faz com que a validação do typescript aceite os tipos escolhidos.
+
+## Parâmetros opcionais
+
+- Nem sempre é utilizado todos os parâmetros de uma função, mas, se ele for opcional, é necessário declarar isso para o typescript e deixar ele no fim da lista de parâmetros.
+
+## Parâmetros default
+
+- Os parâmetros default são os que já possuem um valor definido. Se não for passado para a função, é utilizado esse valor.
+
+- Para este recurso, a aplicação é igual em Javascript.
+
+## Unknow type
+
+- O tipo unknow é utilizado de forma semelhante ao any, ele aceita qualquer tipo de dado, porém, a diferença é que ele não deixa algo ser executado se não houver validação de tipo.
+
+- Ou seja, adiciona uma trava de segurança.
+
+## Never type
+
+- O never é um tipo de retorno semelhante ao void, porém, é utilizado quando a função não retorna nada.
+
+- Um exemplo: retorno de erros.
