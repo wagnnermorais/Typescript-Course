@@ -255,3 +255,11 @@
 - O never é um tipo de retorno semelhante ao void, porém, é utilizado quando a função não retorna nada.
 
 - Um exemplo: retorno de erros.
+
+## Rest Parameters
+
+- Em Javascript ES6 é possível utilizar o rest operator, para aplicá-lo em parâmetros em typescript, basta definir o tipo de dado com a sintaxe de Rest (...)
+
+## Destructuring em parâmetros
+
+- O Destructuring também pode ser aplicado com typescript, é necessário apenas determinar o tipo de cada dado que será desestruturado.
