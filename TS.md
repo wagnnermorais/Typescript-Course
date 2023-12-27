@@ -263,3 +263,59 @@
 ## Destructuring em parâmetros
 
 - O Destructuring também pode ser aplicado com typescript, é necessário apenas determinar o tipo de cada dado que será desestruturado.
+
+# Object Types
+
+## O que são Object Types?
+
+- São os dados que tem como tipo objeto, por exemplo: object literals e arrays.
+
+- Há diversos recursos para explorar sobre estes tipos, como <strong>Interfaces</strong>, <strong>readonly</strong>, <strong>tupla</strong> e outros.
+
+## De tipo para Interface
+
+- Um caso de uso para interfaces é simplificar os parâmetros de objeto de funções.
+
+- Ou seja, ao invés de passar parâmetros de um objeto longo para n funções, é passado apenas a Interface.
+
+## Propriedades opcionais em Interfaces
+
+- As interfaces podem conter propriedades de objeto opcionais, basta adicionar o "?" no nome da propriedade.
+
+## Propriedades Readonly
+
+- As propriedades readonly podem ser alteradas apenas uma vez, na criação do novo dado. É uma forma de criar um valor constante em um objeto.
+
+- Podemos adicionar as interfaces.
+
+## Index Signature
+
+- O Index Signature é utilizado quando não sabemos ainda o nome das chaves, porém, já sabemos quais os tipos de um objeto ou array.
+
+- Isso restringe a tipos que não devem ser utilizados.
+
+## Herança de Interface
+
+- Utilizamos Extending Types como uma herança para criar tipos mais complexos por meio de uma interface, ou seja, uma interface pode herdar as propriedades e tipos já definidos de outra.
+
+- Isso acontece por meio da instrução extends.
+
+## Intersection Types
+
+- Intersection Types são utilizados para criar tipos mais complexos a partir de duas interfaces, concatenando os tipos com o "&".
+
+## ReadOnlyArray
+
+- O ReadOnlyArray é um tipo para arrays, que deixa os itens como readonly, podemos aplicar um tipo para os itens do array, além desta propriedade especial.
+
+- A modificação de itens pode ser feita através de método, mas não é possível aumentar o array, por exemplo.
+
+## Tuplas
+
+- Tupla é um tipo de array, porém, é definido a quantidade e o tipo de elementos. Basicamente, é criado um novo type, e, nele, inserido um array com os tipos necessários.
+
+- Cada tipo conta também como um elemento.
+
+## Tuplas com readonly
+
+- É possível criar tuplas com a propriedade readonly, é um tipo de dado super restrito, pois limita quantos itens teremos, qual o tipo de cada um e também não são modificáveis.
