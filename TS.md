@@ -319,3 +319,49 @@
 ## Tuplas com readonly
 
 - É possível criar tuplas com a propriedade readonly, é um tipo de dado super restrito, pois limita quantos itens teremos, qual o tipo de cada um e também não são modificáveis.
+
+# Criação de Tipos
+
+- Há a possibilidade de gerar novos tipos em typescript, seja com Generics ou com outros operadores.
+
+- A ideia deste recurso é deixar a manutenção do projeto mais simples, gastando mais tempo na estruturação dos tipos e menos na busca de possíveis bugs depois.
+
+## Generics (revisão)
+
+- Utilizado quando uma função pode aceitar mais de um tipo.
+
+### Constraints em Generics
+
+- As constraints ajudam a limitar os tipos aceitos, como em Generic pode-se ter tipos livre, elas vão filtrar os tipos aceitos, adicionando organização quando queremos aproveitar a liberdade dos Generics.
+
+### Interface com Generics
+
+- Com Interfaces é possível criar tipos mais complexos para objetos, adicionando generics, podemos deixá-los ainda mais brandos, aceitando tipos diferentes em ocasiões diferentes.
+
+### Type Parameters
+
+- Type parameters é um recurso de Generics utilizado para dizer que algum parâmetro de uma função, por exemplo, é a chave de um objeto, que também é parâmetro.
+
+- Desta maneira, é possível criar uma ligação entre o tipo genérico e sua chave.
+
+## Keyof type operator
+
+- Com o keyof type operator, podemos criar um novo tipo, ele aceita dados do tipo objeto, como object literals e arrays e, pode criar o tipo baseado nas chaves do objeto passado como parâmetro.
+
+## Typeof Type Operator
+
+- Com o typeof Type Operator, podemos criar um novo tipo baseado no tipo de algum dado, ou seja, é interessante para quando queremos criar uma variável com o mesmo tipo da outra, por exemplo.
+
+## Indexed Access Types
+
+- A abordagem Indexed Access Types pode criar um tipo baseado em uma chave de objeto, ou seja, conseguimos reaproveitar o tipo da chave para outros locais, como funções.
+
+## Conditional Expressions Type
+
+- O tipo por condição permite criar um novo tipo com base em um if/else, mas não são aceitas expressões tão amplas.
+
+- É utilizado a sintaxe de if ternário.
+
+## Template Literals Type
+
+- Podemos criar tipos com Template Literals, é uma forma de customizar tipos de maneiras infinitas, pois o texto que formamos pode depender de variáveis.
