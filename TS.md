@@ -365,3 +365,77 @@
 ## Template Literals Type
 
 - Podemos criar tipos com Template Literals, é uma forma de customizar tipos de maneiras infinitas, pois o texto que formamos pode depender de variáveis.
+
+# Classes com Typescript
+
+## Campos em classes
+
+- Em typescript, é possível adicionar novos campos a uma classe, ou seja, iniciar a classe com campos para os futuros dados dos objetos que serão as propriedades dos objetos instanciados, estes campos podem ser tipados também.
+
+- Um campo sem valor inicial, deve ser declarado com "!".
+
+## Constructor
+
+- Constructor é uma função que dá a possibilidade de iniciar um objeto com valores nos seus campos, fazendo com que não precise mais usar o valor inicial nulo com "!".
+
+- Geralmente, todos os campos serão preenchidos na hora de instanciar um objeto.
+
+## Campos readonly
+
+- É possível iniciar o campo com valor e torná-lo readonly, ou seja, será um valor só para consulta.
+
+- Não é possível alterar este valor ao longo do programa.
+
+## Herança e super
+
+- Para gerar uma herança, utilizamos a palavra reservada extends, depois, é preciso passar as propriedades da classe pai para ela, quando instanciamos um objeto.
+
+- Isso será feito com a função <strong>super</strong>
+
+## Métodos
+
+- Métodos são como funções de uma classe, podendo criá-los junto das classes e os objetos podem utilizá-los.
+
+- É uma maneira de adicionar funcionalidades as classes.
+
+## O This em classes
+
+- A palavra reservada this serve para nos referirmos ao objeto em si, ou seja, conseguimos acessar as suas propriedades.
+
+- Esta funcionalidade funciona da mesma forma que em Javascript.
+
+## Getters
+
+- Os getters são uma forma de retornar propriedades do objeto, porém, podemos modificá-las neste retorno.
+
+- Ou seja, é um método para ler propriedades.
+
+## Setters
+
+- Os getter leem propriedades, já os setters, modificam/atribuem, logo, podemos fazer validações antes de inserir uma propriedade.
+
+- Os setters também funcionam como métodos.
+
+## Herança de Interfaces
+
+- É possível herdar de interfaces também com a instrução de implements, a ideia é bem parecida de extends, porém, esta forma é mais utilizada para criar os métodos que várias classes terão em comum.
+
+## Override de métodos
+
+- O override é uma técnica utilizada para substituir um método de uma classe que herda algo. Basta criar o método com o mesmo nome na classe filha, caracterizando o override.
+
+## Visibilidade
+
+- Visibilidade é o conceito de expor nossos métodos de classes, sendo eles:
+
+#### public
+
+- Visibilidade default, pode ser acessado em qualquer lugar.
+
+#### protected
+
+- Acessível apenas a subclasses da classe do método, para acessar uma propriedade precisamos de um método.
+
+#### private
+
+- Apenas a classe que declarou o método pode utilizar.
