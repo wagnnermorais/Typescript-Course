@@ -439,3 +439,9 @@
 #### private
 
 - Apenas a classe que declarou o método pode utilizar.
+
+## Static Members
+
+- É possível criar propriedades e métodos estáticos em classes, isso faz com que o acesso ou a utilização não dependam de objetos.
+
+- Podemos utilizá-los a partir da própria classe.
