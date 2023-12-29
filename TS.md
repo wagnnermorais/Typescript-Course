@@ -445,3 +445,27 @@
 - É possível criar propriedades e métodos estáticos em classes, isso faz com que o acesso ou a utilização não dependam de objetos.
 
 - Podemos utilizá-los a partir da própria classe.
+
+## Generic Class
+
+- É possível criar classes com tipos genéricos também, ou seja, as propriedades dos argumentos podem ter os tipos definidos na hora da criação da instância, permitindo maior flexibilidade em uma classe.
+
+## Parameters Properties
+
+- Parameters properties é um recurso para definir a privacidade, nome e o tipo das propriedades no constructor, resumindo um pouco a sintaxe das classes.
+
+## Class Expressions
+
+- Class expressions é um recurso para criar uma classe anônima, podendo também utilizar generics junto deste recurso.
+
+- A classe é encapsulada em uma variável.
+
+## Abstract Class
+
+- Abstract class é um recurso para servir como molde de outra classe. Todos os métodos dela devem ser implementados nas classes que a herdam e, também, não podemos instanciar objetos a partir destas classes.
+
+## Relações entre classes
+
+- Podemos criar um objeto com base em outra classe.
+
+- Quando as classes são idênticas o typescript não reclama sobre esta ação, porém, é obrigatório que ambas sejam exatamente iguais.
