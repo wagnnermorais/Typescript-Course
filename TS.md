@@ -505,3 +505,43 @@
 - Importar tipos ou interfaces também é possível e são exportados como se fossem variáveis.
 
 - Na importação, é utilizado também o destructuring.
+
+# Decorators
+
+## O que são os Decorators?
+
+- Decorators podem adicionar funcionalidade extras a classes e funções. Basicamente, é criado novas funções, que são adicionadas a partir de um "@nome".
+
+- Essa função será chamada assim que o item que foi definido o Decorator for executado.
+
+- Para habilitar, é necessário adicionar uma configuração no tsconfig.
+
+## Primeiro Decorator
+
+- O primeiro Decorator será com uma function, ele pode trabalhar com argumentos especiais, que são: target, propertyKey e descriptor.
+
+- Estes são os grandes trunfso do decorator, pois nos dão informações do local em que ele foi executado.
+
+## Múltiplos Decorators
+
+- É possível utilizar múltiplos decorators em typescript, o primeiro a ser executado é o último a ser declarado, pois é o mais próximo de onde ele é invocado, e posteriormente o seu acima.
+
+- Desta maneira, é possível criar operações mais complexas.
+
+## Decorator de Classe
+
+- O decorator de classe está ligado ao constructor, ou seja, sempre que este for executado, o decorator também será, nos permitindo acrescentar algo a criação de classes.
+
+## Decorator de Método
+
+- Com este decorator, é possível modificar a execução de métodos. É preciso inserir o decorator antes da declaração do método.
+
+- Ele é executado antes do método.
+
+## Accessor Decorator
+
+- Semelhante ao decorator de método, porém, este serve apenas para os getters e setters, podendo alterar a execução de um ou de outro.
+
+## Property Decorator
+
+- O property decorator é utilizado nas propriedades de uma classe, ou seja, na hora da definição da mesma, é possível ativar uma função, ajudando a modificar ou validar algum valor.
