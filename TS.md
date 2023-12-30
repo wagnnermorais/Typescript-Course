@@ -469,3 +469,39 @@
 - Podemos criar um objeto com base em outra classe.
 
 - Quando as classes são idênticas o typescript não reclama sobre esta ação, porém, é obrigatório que ambas sejam exatamente iguais.
+
+# Módulos em Typescript
+
+## Introdução aos módulos
+
+- Módulo é a forma que há para importar o código em arquivos.
+
+- Podemos exporta código com "export default" e importar com "import".
+
+- Os arquivos são criados com .ts, porém, importados com .js.
+
+- Isso dá mais flexibilidade, podendo separar as responsabilidades em arquivos.
+
+## Importando variáveis
+
+- É possível importar e exportar variáveis também, a sintaxe é um pouco mais simples, utilizando apenas o export.
+
+- No arquivo de importação, é necessário importar os valores com destructuring.
+
+## Múltiplas importações
+
+- É possível exportar múltiplas variáveis e funções, isso pode ser realizado no mesmo arquivo. Para esta modalidade, é utilizado export para todos os dados e, todos dados devem ser importados com destructuring.
+
+## Alias para importações
+
+- Podemos criar um alias para importações, ou seja, mudar o nome do que foi importado, podendo tornar este novo nome, uma forma mais simples de chamar o recurso.
+
+## Importando tudo
+
+- Para importar tudo que está em um arquivo com apenas um símbolo, é utilizado o "\*", os dados virão em um objeto.
+
+## Importando tipos
+
+- Importar tipos ou interfaces também é possível e são exportados como se fossem variáveis.
+
+- Na importação, é utilizado também o destructuring.
