@@ -545,3 +545,7 @@
 ## Property Decorator
 
 - O property decorator é utilizado nas propriedades de uma classe, ou seja, na hora da definição da mesma, é possível ativar uma função, ajudando a modificar ou validar algum valor.
+
+# React com Typescript
+
+- Adicionar typescript ao React dá mais possibilidades. Como tipos para componentes ou mapeamento de props por meio de interface, dando mais confiabilidade ao projeto.
