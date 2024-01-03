@@ -4,14 +4,36 @@ import styles from "../styles/Form.module.css";
 
 type Props = {
   buttonText: string;
+  taskList: ITask[];
+  setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
+  task?: ITask | null;
+  handleUpdate?(updatedTask: ITask): void;
 };
 
-const Form = ({ buttonText }: Props) => {
+const Form = ({
+  buttonText,
+  taskList,
+  setTaskList,
+  task,
+  handleUpdate,
+}: Props) => {
   const [id, setId] = useState<number>(0);
   const [title, setTitle] = useState<string>("");
   const [difficulty, setDifficulty] = useState<number>(0);
 
-  const handleAddTask = () => {};
+  const handleAddTask = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (handleUpdate) {
+      handleUpdate({ id, title, difficulty });
+    } else {
+      const newId = Math.floor(Math.random() * 1000);
+      const newTask: ITask = { id: newId, title, difficulty };
+
+      setTaskList!([...taskList, newTask]);
+      setTitle("");
+      setDifficulty(0);
+    }
+  };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.name === "title") {
@@ -20,9 +42,17 @@ const Form = ({ buttonText }: Props) => {
       setDifficulty(Number(e.target.value));
     }
   };
+
+  useEffect(() => {
+    if (task) {
+      setId(task.id);
+      setTitle(task.title);
+      setDifficulty(task.difficulty);
+    }
+  }, [task]);
+
   return (
     <div>
-      <h2 className={styles.title}>O que você vai fazer?</h2>
       <form className={styles.form} onSubmit={handleAddTask}>
         <div className={styles.inputContainer}>
           <label htmlFor="title">Título:</label>
@@ -31,6 +61,7 @@ const Form = ({ buttonText }: Props) => {
             type="text"
             name="title"
             placeholder="Título da tarefa"
+            value={title}
           />
         </div>
         <div className={styles.inputContainer}>
@@ -40,6 +71,7 @@ const Form = ({ buttonText }: Props) => {
             type="text"
             name="difficulty"
             placeholder="Nível de dificuldade"
+            value={difficulty}
           />
         </div>
         <input type="submit" value={buttonText} />
