@@ -3,7 +3,7 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 65%;
   margin: 0 auto;
 }
 
@@ -35,4 +35,16 @@
 
 .actions i:hover {
   color: dodgerblue;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 50%;
+  }
 }
