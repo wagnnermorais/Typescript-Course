@@ -565,3 +565,79 @@
 - Para utilizar o express, é necessário importar o pacote e ativá-lo em uma nova variável, geralmente chamada de app.
 
 - Cria-se uma rota que retorna uma mensagem e define-se uma porta para a aplicação.
+
+## Conhecendo o Postman
+
+- O Postman é um client para testes de API, podendo criar o back-end antes ou separado do front-end, só com a ajuda deste software.
+
+- É fundamental para a criação de API's, podendo simular verbos, corpo de requisição, inserir headers, tudo que é possível com uma aplicação WEB.
+
+## Roteamento
+
+- É possível utilizar qualquer requisição HTTP nas rotas do Express.
+
+- Vamos criar uma que funciona a base de POST, para isso, é preciso trafegar dados JSON, ativiando um middleware.
+
+- Os testes serão feitos no Postman.
+
+## Rota para qualquer requisição
+
+- Utilizando o método <strong>all</strong>, é possível criar uma rota que aceita qualquer requisação.
+
+- É interessante para quando um endpoint precisa realizar várias funções.
+
+- É possível criar um tratamento para entregar a resposta.
+
+## Interfaces do Express
+
+- Para alinhar a aplicação ao Typescript, é adicionado novos tipos.
+
+- As requests podem utilizar o tipo <strong>Request</strong> e as respostas <strong>Response</strong>.
+
+## Enviando JSON como respostas
+
+- Na maioria das vezes, JSON é enviado para endpoints de API. Para fazre isso com express, basta enviar o JSON no método JSON de response.
+
+## Routers Parameters
+
+- É possível pegar parâmetros de rotas com Express, utilizando request.params.
+
+- A rota a ser criada precisa ser dinâmica, ou seja, os parâmetros que estamos querendo receber precisam estar no padrão: ":id"
+
+## Rotas mais complexas
+
+- É possível ter rotas com mais de um parâmetro, todos os dados continuam em request.params
+
+- O padrão é: "/foo/:param1/bar/:param2".
+
+- Teremos então: param1 e param2 em request.
+
+## Router Handler
+
+- Router handler é um recurso para o Express, basicamente, é retirado a função anônima de uma rota e externalizada em uma função.
+
+- Podendo reaproveitar essa função, ou estrutura da aplicação desta maneira.
+
+## Middlewares
+
+- Middleware é um recurso para executar uma função entre a execução de uma rota, por exemplo.
+
+- O app.use de JSON é um middleware.
+
+- É possível utilizar middleware para validações, por exemplo.
+
+## Middlewares para todas as rotas
+
+- Para criar um middleware que é executado em todas as rotas, é utilizado o método <strong>use</strong>.
+
+- Criamos uma função e atrelamos ao método, desta maneira, todas as rotas terão ação do middleare.
+
+## Request e Response Generics
+
+- É possível estabelecer os argumentos que vem pelo request e vão pela response.
+
+- Para isso, é utilizado os Generics de Response e Request, que são as Interfaces disponibilizadas pelo Express.
+
+## Tratando erros
+
+- Para tratar possíveis erros, é utilizado blocos try catch, desta maneira, é possível detectar algum problema e retornar uma resposta ao usuário ou até mesmo criar um log no sistema.
