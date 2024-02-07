@@ -549,3 +549,19 @@
 # React com Typescript
 
 - Adicionar typescript ao React dá mais possibilidades. Como tipos para componentes ou mapeamento de props por meio de interface, dando mais confiabilidade ao projeto.
+
+# Typescript com Express
+
+## Inicialização
+
+- Para iniciar um projeto com Express e Typescript, é necessário criar o projeto com <strong>npm init</strong> e, também, iniciar o Typescript com <strong>npx tsc -init</strong>
+
+- Após estes passos, as dependências serão instaladas.
+
+- E por fim, é criado um script e iniciamos a aplicação.
+
+## Utilizando o Express
+
+- Para utilizar o express, é necessário importar o pacote e ativá-lo em uma nova variável, geralmente chamada de app.
+
+- Cria-se uma rota que retorna uma mensagem e define-se uma porta para a aplicação.
